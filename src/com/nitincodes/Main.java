@@ -13,10 +13,10 @@ public class Main {
         int end = arr.length-1;
         while(start<=end){
             int mid = start + (end-start)/2;
-            if(start>arr[mid]){
+            if(target>arr[mid]){
                 end = mid-1;
             }
-            else if(start<arr[mid]){
+            else if(target<arr[mid]){
                 start = mid+1;
             }
             else{
